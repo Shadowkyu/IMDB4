@@ -1,9 +1,39 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab Two
+      Films favoris
     </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar no-border-top>
+    <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content no-padding>
+  <div *ngIf="favoriteFilms && favoriteFilms.length; else noFavorite" no-padding>
+    <ion-list>
+      <ion-item *ngFor="let movie of favoriteFilms" (click)="goToDetails(film.id)">
+        <ion-row>
+          <ion-col col-2>
+            <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"/>
+          </ion-col>
+          <ion-col col-7 text-wrap>
+            <h4>{{movie.title}}</h4>
+          </ion-col>
+          <ion-col col-3>
+            <h4>{{movie.release_date}}</h4>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ng-template #noFavorite>
+    <ion-card>
+      <ion-card-content>
+        <p>Vous n'avez pas de favoris</p>
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+</ion-content>

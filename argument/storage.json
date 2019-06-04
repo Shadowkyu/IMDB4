@@ -1,0 +1,32 @@
+{
+    "telemetry.machineId": "d9eabd5ee267940ce9f40db3798f30764073c3c6649b29128bd3e29b32cc9d40",
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "pickerWorkingDir": "C:\\Users\\quent\\IMDB-TP",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///c%3A/Users/quent/IMDB-TP/IMDB4"
+        ],
+        "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\quent\\IMDB-TP\\IMDB4",
+                "external": "file:///c%3A/Users/quent/IMDB-TP/IMDB4",
+                "path": "/c:/Users/quent/IMDB-TP/IMDB4",
+                "scheme": "file"
+            },
+            "backupPath": "C:\\Users\\quent\\IMDB-TP\\IMDB4\\argument\\Backups\\15b7a54801fbaa2f87699faf7ef7b369",
+            "uiState": {
+                "mode": 0,
+                "x": -8,
+                "y": -8,
+                "width": 1552,
+                "height": 840
+            }
+        }
+    }
+}
